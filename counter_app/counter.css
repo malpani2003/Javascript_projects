@@ -1,0 +1,36 @@
+.block {
+    background-color: greenyellow;
+    width: fit-content;
+    padding: 0.9rem;
+    border-radius: 10%;
+    height: fit-content;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 0.1rem;
+}
+
+.btn {
+    /* height: 3rem; */
+    font-size: x-large;
+}
+
+.block,
+.btn {
+    margin: 0% auto;
+
+}
+
+footer {
+    margin-top: 8rem;
+}
+
+@media(max-width:400px) {
+    .btn {
+        /* height: 3rem; */
+        font-size: larger;
+    }
+    .block{
+        font-size: x-large;
+    }
+}
