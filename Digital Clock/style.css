@@ -1,0 +1,22 @@
+.row{
+    border: 5px solid black;
+    width: 50%;
+    background-image: linear-gradient(50deg,rgb(2, 2, 2),rgb(48, 48, 255));
+    padding: .8rem;
+    text-align: center;
+    font-size: xx-large;
+    color: azure;
+    border-radius: 10px 20px;
+    margin: 0% auto;
+   
+    display: block;
+}
+nav,footer{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    color: white;
+
+}
+footer{
+    margin-top: 13rem;
+}
