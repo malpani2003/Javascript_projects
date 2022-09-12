@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body onkeydown="play_on_press(event)">
+    <nav class="bg-warning text-danger p-2">
+        <h1>My Basic Video Player - Pranav Malpani</h1>
+        
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8 card" onmouseover="display()" onmouseout="display_none()">
+                <div class="card-header">
+                    <h3>Show Password Option in Login form Using Javascript</h3>
+                    <br>
+                    <p>In this article, we will see the code to make such a show password button using javascript. <br><br> The logic behind this show password button is straightforward. What we do is just change the "type" attribute's value of the input to "text" from "password" when we want to make the password visible and reset it to "password" when we want to hide.</p>
+                </div>
+                <div class="card-body" >
+                    <video id="video" >
+                        <source src="showpassword.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="card-footer controls">
+                   
+                        <button onclick="video_play()" class="btn btn-success">Play</button>
+                        <button onclick="video_pause()" class="btn btn-warning">Pause</button>
+                        <button onclick="video_load()" class="btn btn-danger">Reload</button>
+                        <!-- <button onclick="video_start()">Restart</button> -->
+                        <label for="" cl>Speed: <span class="value_speed">0</span> X</label>
+                        <input type="range" name="speed" id="speed" max="200" min="0" onchange="spped_change()">
+                        <label for="">Volume: <span class="value">50</span> %</label>
+                       <input type="range" name="volume" id="volume" max="100" min="0" onchange="volume_change()">
+                   
+                    
+                </div>
+                
+             </div>
+             <div class="col-md-3 other_video offset-md-1">
+                <h3>Suggestion</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.kxRG8Tf1onRTsEGSFZ-JMgHaD4&pid=Api&P=0" alt="">
+
+                    </div>
+                    <div class="card-footer">
+                        <h4>Best Javascript Course</h4>
+                    </div>
+                </div>
+
+                <div class="card my-3">
+                    <div class="card-body">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.A5a1-4YNQjLCH7d-6R3rXgHaEK&pid=Api&P=0" alt="">
+
+                    </div>
+                    <div class="card-footer">
+                        <h4>Advanced Javascript</h4>
+                    </div>
+                </div>
+
+               
+
+               
+               
+             </div>
+        </div>
+       
+    </div>
+   
+    
+<script src="script.js"></script>
+ 
+</body>
+
+</html>
