@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cal">
+        <h1>Easy Pro Calculator</h1>
+        <form action="">
+            <!-- <input type="text"  readonly id="display"  style="background-color: #000000; color: white; border-radius: 10px;"> -->
+            <textarea name="display" id="display" readonly
+                style="background-color: #000000; color: white; border-radius: 10px; resize: none;" ></textarea>
+        </form>
+        <div class="box">
+            <div><button onclick="empty()">AC</a></button></div>
+            <div><button onclick="back()"><---</button></div>
+            <div><button onclick="add('-')" class="operator">-</button></div>
+            <div><button onclick="add('/')" class="operator">/</button></div>
+            <div><button onclick="add('7')">7</button></div>
+            <div><button onclick="add('8')">8</button></div>
+            <div><button onclick="add('9')">9</a></button></div>
+            <div><button onclick="add('*')" class="operator">*</a></button></div>
+            <div><button onclick="add('4')">4</a></button></div>
+            <div><button onclick="add('5')">5</a></button></div>
+            <div><button onclick="add('6')">6</a></button></div>
+            <div><button onclick="add('-')" class="operator">-</a></button></div>
+            <div><button onclick="add('1')">1</a></button></div>
+            <div><button onclick="add('2')">2</a></button></div>
+            <div><button onclick="add('3')">3</a></button></div>
+            <div><button onclick="add('+')" class="operator">+</a></button></div>
+            <div><button onclick="answer()">=</a></button></div>
+            
+            <div><button onclick="add('0')">0</a></button></div>
+            <div><button onclick="add('.')">.</a></button></div>
+            <div><button onclick="add('%')" class="operator">%</a></button></div>
+
+        </div>
+        <p style="font-weight: bold;">Made by - Pranav Malpani</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

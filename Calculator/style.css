@@ -1,0 +1,63 @@
+body {
+    /* background-color: #edbbb2; */
+    background-color: #671584;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Rowdies', cursive;
+}
+
+ button{
+    /* background-color: #671584; */
+    background-color: #000000;
+    padding: 10px;
+    width: 60px;
+    /* height: 60px; */
+
+    border-radius: 10000px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+
+
+}
+
+.operator{
+    background-color: navy;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.cal {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 500px;
+    margin-top: 3%;
+    /* margin-left: 25%; */
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+form {
+    margin-bottom: 2%;
+
+
+}
+
+#display {
+    height: 4rem;
+    width: 25rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: xx-large;
+    line-height: 3.6rem;
+}
