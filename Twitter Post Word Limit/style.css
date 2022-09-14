@@ -1,0 +1,32 @@
+form{
+    margin: 0% auto;
+}
+body {
+    background-color: white;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+button {
+    height: fit-content;
+    margin: auto;
+}
+
+.alert {
+    display: none;
+}
+.badge{
+    position: relative;
+    top:-3.3rem;
+    left:.5rem;
+    padding: 10px;
+    font-size:large;
+}
+.footer{
+    margin-top: 12rem;
+}
+textarea{
+    color:rgb(10, 114, 10);
+}
