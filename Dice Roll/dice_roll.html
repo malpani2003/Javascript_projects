@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: #1670fb;
+       }
+       .box{
+        background-color: white;
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        border: 3px solid black;
+        margin: auto;
+        margin-top: 5rem;
+        box-shadow: 3px 3px 20px black;
+       }
+       img{
+        width: 5rem;
+       }
+       button{
+        background-color:black;
+        padding: 5px 15px;
+        color: white;
+        font-size: x-large;
+        border-radius: 100px;
+       }
+       .box p{
+        font-weight: bold;
+        font-size:x-large;
+        color: green;
+       }
+       .box h1{
+        background-color: #69fab1;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>Click on Roll Dice Button <br> Have Fun !</h1>
+        <h3>Made by - Pranav Malpani</h3>
+        <p id="status"></p>
+        <img src="dice_6.jpg" alt="" class="dice">
+        <br>
+        <button onclick="roll()">Roll dice</button>
+    </div>
+
+    <script>
+        var dice = document.querySelector(".dice");
+        function change_dice(){
+            var dice_num;
+            do {
+                dice_num = parseInt(Math.floor(Math.random() * 7));
+            } while (dice_num == 0);
+
+            document.querySelector("#status").innerText="Here is the Result ........\nRoll Again!";
+            console.log(dice_num);
+            src = `dice_${dice_num}.jpg`;
+            // sound=dice_sounf.mpeg;
+           
+            console.log(src);
+            dice.setAttribute("src", src);
+        }
+        function roll() {
+            document.querySelector("#status").innerText="Dice is Rolling Wait.........";
+            const sound =new Audio("Dice Roll.mp3");
+            sound.play();
+            window.setTimeout(change_dice,700);   
+        }
+    </script>
+</body>
+
+</html>
