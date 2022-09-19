@@ -10,7 +10,7 @@
        body{
         background-color: #1670fb;
        }
-       .box{
+       .box,.result{
         background-color: white;
         width: 30%;
         text-align: center;
@@ -18,7 +18,7 @@
         border-radius: 20px;
         border: 3px solid black;
         margin: auto;
-        margin-top: 5rem;
+        margin-top: 2rem;
         box-shadow: 3px 3px 20px black;
        }
        img{
@@ -42,6 +42,12 @@
         padding: 10px;
         border-radius: 20px;
        }
+       .result{
+        font-style: italic;
+        font-weight: bold;
+        font-size: x-large;
+        background-color: #69fab1;
+       }
     </style>
 </head>
 
@@ -51,26 +57,59 @@
         <h1>Click on Roll Dice Button <br> Have Fun !</h1>
         <h3>Made by - Pranav Malpani</h3>
         <p id="status"></p>
+        <p style="color:red;"> Player -1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player-2</p>
         <img src="dice_6.jpg" alt="" class="dice">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="dice_6.jpg" alt="" class="dice2">
         <br>
         <button onclick="roll()">Roll dice</button>
     </div>
 
+    <div class="result">
+        Result Will Be Shown Here 
+
+    </div>
+
     <script>
         var dice = document.querySelector(".dice");
+        var dice2=document.querySelector(".dice2");
+        var show_res=document.querySelector(".result");
         function change_dice(){
             var dice_num;
             do {
                 dice_num = parseInt(Math.floor(Math.random() * 7));
-            } while (dice_num == 0);
+                dice_num_2 = parseInt(Math.floor(Math.random() * 7));
+
+            } while (dice_num == 0 || dice_num_2==0);
 
             document.querySelector("#status").innerText="Here is the Result ........\nRoll Again!";
             console.log(dice_num);
             src = `dice_${dice_num}.jpg`;
+            src_2 = `dice_${dice_num_2}.jpg`;
+
             // sound=dice_sounf.mpeg;
            
             console.log(src);
             dice.setAttribute("src", src);
+            dice2.setAttribute("src", src_2);
+
+            if(dice_num==dice_num_2){
+                console.log("Draw");
+              show_res.innerText="Match Draw";
+
+
+            }
+            else if(dice_num>dice_num_2){
+                console.log("Player-1 Wins");
+                show_res.innerText="Congrulations! Player-1 , You Wins";
+            }
+            else{
+                console.log("Player-2 Wins");
+                show_res.innerText="Congrulations! Player-2 , You Wins";
+
+            }
+
+
         }
         function roll() {
             document.querySelector("#status").innerText="Dice is Rolling Wait.........";
