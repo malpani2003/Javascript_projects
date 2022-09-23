@@ -1,0 +1,56 @@
+body{
+    background-color: aquamarine;
+    margin: 0%;
+    padding: 0%;
+}
+.display{
+    border: 2px solid black;
+    margin: auto;
+    width:40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+    background-color: white;
+    margin-top: 5rem;
+
+}
+.display h2{
+    font-style: italic;
+}
+#btn{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 10px 10px;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+#btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+#author{
+    text-align: right;
+
+}
+.main_category{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding:5px;
+    margin: 0%;
+}
+nav h1,p{
+    font-size: xx-large;
+    margin-left: 10px;
+    text-align: center;
+}
